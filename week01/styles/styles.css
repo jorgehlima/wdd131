@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html, body {
+    min-height: 100 vh;
+}
+
 body {
 	font-family: Georgia, 'Times New Roman', serif;
     display: grid;
@@ -19,6 +23,11 @@ h1 {
 	color: white;
     text-align: left;
     padding: 1.5rem;
+}
+
+header {
+    background: #333;
+    grid-area: header;
 }
 
 p {
