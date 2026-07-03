@@ -4,20 +4,29 @@
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 | Dynamic Web Fundamentals | Jorge Lima</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jorge Lima</title>
 
     <!-- meta description -->
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - This page is a brief introduction of me.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jorge Lima's personal course landing page featuring a software development student profile, web development resources, and links to LinkedIn, Canvas, and scripture study.">
 
     <!-- meta author -->
     <meta name="author" content="Jorge Lima">
+
     <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
 
     <header>
-
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -27,21 +36,37 @@
             <h2>About Me</h2>
             <img src="images/profile.jpg" alt="Portrait of Jorge Lima">
             <p>
-                "My name is Jorge Lima, and I am originally from Belém, Brazil, however, I live in Wilmington, NC. I am currently pursuing a Bachelor's degree in Software Development through BYU–Pathway Worldwide. Outside of my studies, I have a strong interest in web development, and I enjoy fishing, camping, reading and spending quality time with my family."
+                My name is Jorge Lima, and I am originally from Belém, Brazil, though I now live in Wilmington, NC.
+                I am currently pursuing a Bachelor's degree in Software Development through BYU–Pathway Worldwide.
+                Outside of my studies, I have a strong interest in web development, and I enjoy fishing, camping,
+                reading, and spending quality time with my family.
             </p>
         </section>
 
         <section class="card">
             <h2>Web Development Resources</h2>
+            <img src="images/webdev-resource.jpg" alt="Web development workspace with code on screen">
+            <p>
+                As I work through this course, I'm building a personal toolkit of resources for learning and
+                referencing web development concepts. Below are a few sites I regularly turn to for tutorials,
+                documentation, and inspiration.
+            </p>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+            </ul>
         </section>
 
     </main>
 
     <footer>
-
-
+        <p>&copy; <span id="currentyear"></span> Jorge Lima, North Carolina, USA</p>
+        <p id="lastModified"></p>
     </footer>
-    
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

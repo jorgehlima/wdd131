@@ -1,0 +1,149 @@
+/* ---------- Base ---------- */
+:root {
+    --primary-color: #2c4870;
+    --secondary-color: #22252b;
+    --accent-color: #d94f4f;
+    --light-bg: #ffffff;
+    --text-color: #2d2d2d;
+    --border-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+header nav {
+    background-color: var(--secondary-color);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.85rem 1rem;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+main h1 {
+    flex-basis: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem;
+}
+
+section.card {
+    flex: 1 1 400px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+}
+
+section.card h2 {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+section.card img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 1rem auto 0;
+    border-radius: 4px;
+}
+
+section.card p,
+section.card ul {
+    padding: 0 1.25rem;
+}
+
+section.card p {
+    margin: 1rem 0;
+}
+
+section.card ul {
+    margin: 0 0 1rem;
+}
+
+section.card a {
+    color: var(--primary-color);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #f0d264;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 699px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
