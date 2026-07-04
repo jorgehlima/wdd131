@@ -22,7 +22,7 @@ body {
     line-height: 1.6;
 }
 
-/* -- Header -- */
+/* -- Header section -- */
 header {
     background: var(--primary-color);
     color: white;
@@ -64,7 +64,7 @@ header nav a:focus {
     text-decoration: underline;
 }
 
-/* ---------- Main ---------- */
+/* -- Main section -- */
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -115,7 +115,7 @@ section.card a {
     color: var(--primary-color);
 }
 
-/* About Me layout */
+/* -- About Me layout -- */
 .about-top {
     display: flex;
     gap: 1.5rem;
@@ -148,6 +148,11 @@ section.card a {
     border-top: 1px solid #cfcfcf;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
 .location {
     display: flex;
     gap: 1.5rem;
@@ -157,7 +162,7 @@ section.card a {
 
 .location figure {
     text-align: center;
-    margin: 0;
+    margin: 3rem 0 0 0;
 }
 
 .location img {
@@ -177,7 +182,7 @@ section.card a {
     flex: 1;
 }
 
-/* -- Resources -- */
+/* -- Resources section -- */
 .resources {
     padding: 1.5rem 2rem;
 }
