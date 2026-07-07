@@ -1,25 +1,32 @@
-// 5
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-// 8
-const li = document.createElement('li');
+button.addEventListener('click', function () {
 
-// 9
-const deleteButton = document.createElement('button');
+    if (input.value.trim() !== '') {
 
-// 10
-li.textContent = input.value;
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-// 11
-deleteButton.textContent = '❌';
+        li.textContent = input.value;
 
-// Accessibility
-deleteButton.setAttribute('aria-label', 'Remove chapter');
+        deleteButton.textContent = '❌';
+        deleteButton.setAttribute('aria-label', `Remove ${input.value}`);
 
-// 12
-li.append(deleteButton);
+        li.append(deleteButton);
+        list.append(li);
 
-// 13
-list.append(li);
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        input.value = '';
+        input.focus();
+
+    } else {
+        input.focus();
+    }
+
+});
