@@ -1,6 +1,6 @@
 // Get elements from the document
 const radiusOutput = document.getElementById('radius');
-const areaOutput = document.querySelector('area');
+const areaOutput = document.querySelector('#area');
 
 let area = 0;
 const PI = 3.14159;
