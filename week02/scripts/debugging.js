@@ -1,3 +1,4 @@
+// Get elements from the document
 const radiusOutput = document.getElementById('radius');
 const areaOutput = document.querySelector('area');
 
