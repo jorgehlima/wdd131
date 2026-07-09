@@ -5,7 +5,7 @@
     display: none;
 }
 
-.navigation{
+nav.navigation{
     flex-direction: row;
     justify-content: center;
 }
