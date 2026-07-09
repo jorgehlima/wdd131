@@ -24,7 +24,7 @@ header h1{
     text-align: center;
 }
 
-/* -- Navigation -- */
+/* -- Navigation flex -- */
 .navigation{
     display: flex;
     flex-direction: column;
@@ -34,10 +34,10 @@ header h1{
 .navigation a{
     color: white;
     text-decoration: none;
-    padding: 8rem;
+    padding: .75rem;
 }
 
-/*-- Hover --*/
+/*-- Hover effect --*/
 .navigation a:hover{
     background: #457b9d;
     color: white;
