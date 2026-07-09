@@ -36,6 +36,7 @@ header h1{
     color: white;
     text-decoration: none;
     padding: .75rem 1rem;
+    display: none;
 }
 
 /*-- Hover effect --*/
@@ -63,24 +64,16 @@ header h1{
     content:"✖";
 }
 
-.navigation a{
-    display: none;
-}
-
 .navigation.show a{
-
     display: block;
 }
 
-/*-- Main section --*/
+/*-- Main grid section --*/
 main{
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-}
 
-/*-- Grid layout --*/
-main{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
