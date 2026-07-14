@@ -1,0 +1,17 @@
+@media (min-width:800px) {
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}    
+
+.mobile-weather {
+    display: none;
+}
+
+.weather-icon {
+    display: inline;
+}
+
+}
