@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Country Page - Jorge Lima</title>
+    <title>WDD 131 - Country Page - Jorge Lima - New Zealand</title>
 
     <!-- style CSS -->
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
 
     <!-- JavaScript -->
     <script src="scripts/place.js" defer></script>
@@ -14,15 +15,67 @@
 <body>
 
     <header>
-
+        <h1>New Zealand</h1>
     </header>
 
     <main>
 
+        <!-- Hero class -->
+        <section class="hero">
+
+            <picture>
+
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+
+                <img  src="images/hero-small.webp" alt="New Zealand" width="1200" height="700">
+
+            </picture>
+
+        </section>
+
+        <!-- Content Class -->
+        <section class="content">
+
+            <!-- Data class -->
+            <section class="data">
+
+                <h2>Data</h2>
+
+                <p><strong>Country:</strong> Brazil</p>
+                <p><strong>State:</strong> Pará</p>
+                <p><strong>Population:</strong> 1.3 Million</p>
+                <p><strong>Language:</strong> Portuguese</p>
+                <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+
+            </section>
+
+            <!-- Weather class -->
+            <section class="Weather">
+
+                <h2>
+                    Weather
+                    <span class="weather-icon">⛅</span>
+                </h2>
+
+                <img src="images/weather.svg" alt="Weather icons" class="mobile-weather">
+
+                <p><strong>Temperature:</strong> 87°F</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 8 mph</p>
+
+            </section>
+
+        </section>
     </main>
 
     <footer>
-        
+
+        <p>
+        &copy; <span id="currentyear"></span> Jorge Lima
+        </p>
+
+        <p id="lastModified"></p>
+
     </footer>
     
 </body>
