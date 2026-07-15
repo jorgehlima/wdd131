@@ -35,23 +35,24 @@ main {
     margin: 0 auto;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.content {
-    padding: 1rem;
-}
-
-.data, 
+.data,
 .weather {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin-bottom: 1.5rem;
     padding: 1.5rem;
+    margin: 1rem;
+    position: static;
 }
 
 h2 {
