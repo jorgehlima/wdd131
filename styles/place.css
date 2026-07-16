@@ -31,8 +31,7 @@ header h1 {
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .hero {
@@ -45,6 +44,7 @@ main {
     display: block;
 }
 
+/*-- cards --*/
 .data,
 .weather {
     background: rgba(255, 255, 255, 0.9);
@@ -53,6 +53,10 @@ main {
     padding: 1.5rem;
     margin: 1rem;
     position: static;
+}
+
+.weather-title::after {
+    front-size: 1.4rem;
 }
 
 h2 {
@@ -68,7 +72,7 @@ p {
 }
 
 .mobile-weather {
-    display: block;
+    display: none;
     width: 50px;
     margin: 0 auto 1rem;
 }

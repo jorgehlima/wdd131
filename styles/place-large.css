@@ -1,20 +1,43 @@
 @media (min-width: 800px) {
 
-    .content {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 2rem auto;
+    .hero {
+        position: relative;
+    }
+
+    .hero picture {
+        display: block;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 280px;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .weather {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        width: 250px;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .weather-title::after {
-        
+        content: " ⛅";
         font-size: 1.4rem;
     }
 
     .mobile-weather {
         display: none;
     }
-
 }
