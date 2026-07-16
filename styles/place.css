@@ -74,7 +74,7 @@ main {
 }
 
 .weather-title::after {
-    front-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 h2 {
