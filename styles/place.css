@@ -1,6 +1,6 @@
 :root {
     --primary-color: #009c3b;
-    --secondary-color: #ffdf00;
+    
     --accent-color: #002776;
     --background-color: #f8f8f8;
     --text-color: #222;
@@ -31,11 +31,6 @@ header h1 {
     font-family: var(--heading-font);
 }
 
-main {
-    width: 100%;
-    margin: 0;
-}
-
 /*-- Position of hero within page --*/
 .hero {
     position: relative;
@@ -64,18 +59,10 @@ main {
     line-height: 1.2;
 }
 
-.weather h2 {
-    margin-bottom: 0.5rem;
-}
-
 /*-- cards paragraph spacing --*/
 .weather p {
     margin: 0.3rem 0;
     line-height: 1.2;
-}
-
-.weather-title::after {
-    font-size: 1.4rem;
 }
 
 h2 {
@@ -91,7 +78,6 @@ h2 {
     text-align: center;
 }
 
-/*-- weather card font spacing --*/
 p {
     line-height: 1;
     margin-bottom: 0.65rem;
@@ -103,10 +89,6 @@ p {
     width: 16px;
     height: auto;
     margin: 0 auto 0.5rem;
-}
-
-.weather-icon {
-    display: none;
 }
 
 footer {
