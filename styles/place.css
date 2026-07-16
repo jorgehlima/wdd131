@@ -112,6 +112,6 @@ footer {
     text-align: center;
     background: var(--accent-color);
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 0;
 }
