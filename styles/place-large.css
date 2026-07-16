@@ -9,7 +9,7 @@
     }
 
     .weather-title::after {
-        content: " ⛅";
+        
         font-size: 1.4rem;
     }
 
