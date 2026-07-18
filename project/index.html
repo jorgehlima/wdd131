@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Belém, Brazil - Explore its culture, history, attractions, and plan your visit.">
+    <meta name="author" content="Jorge Lima">
+
+    <title>Discover Belém | Home</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Discover Belém</h1>
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation Menu">&#9776;</button>
+
+    <nav id="navigation">
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="visit.html">Plan Your Visit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <picture>
+
+            <source
+                media="(min-width: 900px)"
+                srcset="images/belem-hero-large.webp">
+
+            <source
+                media="(min-width: 600px)"
+                srcset="images/belem-hero-medium.webp">
+
+            <img
+                src="images/belem-hero-small.webp"
+                alt="View of Estação das Docas along the Guajará Bay in Belém, Brazil"
+                width="1200"
+                height="700">
+
+        </picture>
+
+        <div class="hero-text">
+            <h2>Experience the Gateway to the Amazon</h2>
+
+            <p>
+                Discover one of Brazil's most fascinating cities where history,
+                culture, rivers, and delicious cuisine come together.
+            </p>
+
+            <a class="button" href="attractions.html">
+                Explore Attractions
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Welcome -->
+
+    <section class="welcome">
+
+        <h2>Welcome to Belém</h2>
+
+        <p>
+
+            Located in northern Brazil at the entrance of the Amazon River,
+            Belém is known for its rich history, colonial architecture,
+            vibrant markets, tropical cuisine, and beautiful waterfront.
+            Visitors enjoy exploring museums, parks, historic churches,
+            and experiencing the unique culture of the Brazilian Amazon.
+
+        </p>
+
+    </section>
+
+    <!-- Highlights -->
+
+    <section class="highlights">
+
+        <h2>Featured Attractions</h2>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <img
+                    src="images/ver-o-peso.webp"
+                    alt="Ver-o-Peso Market"
+                    loading="lazy"
+                    width="400"
+                    height="250">
+
+                <h3>Ver-o-Peso Market</h3>
+
+                <p>
+                    One of the largest open-air markets in Latin America,
+                    famous for regional fruits, seafood, herbs, and Amazonian culture.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img
+                    src="images/docas.webp"
+                    alt="Estação das Docas"
+                    loading="lazy"
+                    width="400"
+                    height="250">
+
+                <h3>Estação das Docas</h3>
+
+                <p>
+                    A restored riverfront warehouse district featuring restaurants,
+                    live music, shopping, and spectacular sunset views.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img
+                    src="images/mangal.webp"
+                    alt="Mangal das Garças Park"
+                    loading="lazy"
+                    width="400"
+                    height="250">
+
+                <h3>Mangal das Garças</h3>
+
+                <p>
+                    A beautiful ecological park showcasing Amazon wildlife,
+                    gardens, butterflies, and observation towers.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Visitor Greeting -->
+
+    <section class="visitor">
+
+        <h2>Welcome Back!</h2>
+
+        <p id="visitorMessage">
+            We hope you enjoy discovering Belém.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span> Jorge Lima |
+        WDD 131 Final Project
+    </p>
+
+    <p id="lastModified"></p>
+
+    <p>
+        <a href="references.html">References</a>
+    </p>
+
+</footer>
+
+</body>
+</html>
