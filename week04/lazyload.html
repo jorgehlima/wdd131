@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lazyloading Images</title>
+    <meta name="author" content="Jorge Lima">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/lazyload.css">
 </head>
 <body>
 
@@ -12,21 +16,33 @@
     </header>
 
     <main>
-        <img src="images/image1.jpg" alt="Image 1" loading="lazy" width="400" height="600">
+        <picture>
+            <img src="images/image1.jpg" alt="Balrog vs Glorfindel" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image2.jpg" alt="Smaug" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image3.jpg" alt="You shall not pass!" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image4.jpg" alt="Gandalf in the Shire" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image5.jpg" alt="The Mûmakil attack" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/image6.jpg" alt="Galadriel" loading="lazy" width="400" height="600">
+        </picture>
 
-        <img src="images/image2.jpg" alt="Image 2" loading="lazy" width="400" height="600">
-
-        <img src="images/image3.jpg" alt="Image 3" loading="lazy" width="400" height="600">
-
-        <img src="images/image4.jpg" alt="Image 4" loading="lazy" width="400" height="600">
-
-        <img src="images/image5.jpg" alt="Image 5" loading="lazy" width="400" height="600">
-
-        <img src="images/image6.jpg" alt="Image 6" loading="lazy" width="400" height="600">
     </main>
 
     <footer>
-        
+        <p>&copy; <span id="currentyear"></span> Jorge Lima</p>
+        <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/lazyload.js"></script>
+
 </body>
 </html>
