@@ -1,0 +1,51 @@
+
+/*--center content --*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--Center main content--*/
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*--Display vertical images--*/
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 2rem auto;
+}
+
+/*--Fade from black animation--*/
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 2rem auto;
+
+    animation: fadeIn 1.5s ease-in;
+}
+
+/*--Style footer--*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
