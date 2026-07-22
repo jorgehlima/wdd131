@@ -91,7 +91,7 @@ const temples = [
 },
 {
     templeName: "Brussels Belgium Temple",
-    location: "Brussels Belgium",
+    location: "Brussels, Belgium",
     dedicated: "2021, April, 4",
     area: 25500,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/brussels-belgium-temple/brussels-belgium-temple-56533-main.jpg"
