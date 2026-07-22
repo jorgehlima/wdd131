@@ -84,18 +84,29 @@ main h2{
     text-align: center;
 }
 
-/*-- Figures/images --*/
-figure{
-    background: white;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,.15);
+/*-- temple cards --*/
+#templeCards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
 }
 
-figure img{
-    width: 100%;
-    height: auto;
+.card{
+    background:white;
+    border-radius:10px;
+    padding:1rem;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+    border-radius:5px;
+}
+
+.card p {
+    margin: .5rem 0;
 }
 
 /*-- Footer --*/

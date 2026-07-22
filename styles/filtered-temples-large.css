@@ -1,7 +1,6 @@
 @media screen and (min-width:768px){
 
 #menu{
-
     display: none;
 }
 
@@ -15,6 +14,14 @@ nav.navigation{
 }
 
 main{
-    grid-template-columns: repeat(3,1fr);
+    max-width: 1200px;
 }
+
+/* Temple cards layout */
+#templeCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
 }
