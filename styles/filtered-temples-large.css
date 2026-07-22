@@ -1,0 +1,20 @@
+@media screen and (min-width:768px){
+
+#menu{
+
+    display: none;
+}
+
+nav.navigation{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation a{
+    display: block;
+}
+
+main{
+    grid-template-columns: repeat(3,1fr);
+}
+}
