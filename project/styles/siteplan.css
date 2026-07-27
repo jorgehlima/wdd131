@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #0A192F;
+    --secondary-color: #64B5F6;
+    --background-color: #FFFFFF;
+    --section-background: #F4F4F4;
+    --text-color: #333333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+section {
+    background-color: var(--section-background);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+}
