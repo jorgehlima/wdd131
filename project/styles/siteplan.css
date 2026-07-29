@@ -12,6 +12,28 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/*-- Header --*/
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: #0A192F;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
 header,
 footer {
     background-color: var(--primary-color);
