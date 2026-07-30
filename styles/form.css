@@ -1,47 +1,64 @@
-const products = [
-{
-id: "fc-1888",
-name: "flux capacitor",
-averagerating: 4.5
-},
-{
-id: "fc-2050",
-name: "power laces",
-averagerating: 4.7
-},
-{
-id: "fs-1987",
-name: "time circuits",
-averagerating: 3.5
-},
-{
-id: "ac-2000",
-name: "low voltage reactor",
-averagerating: 3.9
-},
-{
-id: "jj-1969",
-name: "warp equalizer",
-averagerating: 5.0
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    margin:0;
 }
-];
 
-const productSelect = document.querySelector("#product");
+header,
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
 
-products.forEach(product => {
+main{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:2rem;
+}
 
-const option = document.createElement("option");
+form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
 
-option.value = product.id;
+label{
+    font-weight:bold;
+}
 
-option.textContent = product.name;
+input,
+select,
+textarea{
+    padding:.7rem;
+    font-size:1rem;
+}
 
-productSelect.appendChild(option);
+fieldset{
+    border:1px solid #ccc;
+    padding:1rem;
+}
 
-});
+input[type="submit"]{
+    background:#0066cc;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:1rem;
+}
 
-document.querySelector("#currentyear").textContent =
-new Date().getFullYear();
+input[type="submit"]:hover{
+    background:#004999;
+}
 
-document.querySelector("#lastModified").textContent =
-document.lastModified;
+@media screen and (min-width:768px){
+
+main{
+
+max-width:800px;
+
+}
+
+}
