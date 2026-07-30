@@ -25,6 +25,11 @@ form{
     gap:1rem;
 }
 
+.optional{
+    color:navy;
+    font-size:.9rem;
+}
+
 label{
     font-weight:bold;
 }

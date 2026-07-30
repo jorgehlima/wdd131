@@ -1,44 +1,61 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>
-Review Submitted
-</h1>
+<head>
 
-</header>
+    <meta charset="UTF-8">
 
-<main>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-<h2>
-Thank you!
-</h2>
+    <title>Review Submitted</title>
 
-<p>
-Your review has been submitted successfully.
-</p>
+    <meta name="description"
+    content="Review Confirmation">
 
-<p>
+    <meta name="author"
+    content="Jorge Lima">
 
-Reviews Submitted:
+    <link rel="stylesheet"
+    href="styles/form.css">
 
-<span id="reviewCount"></span>
+    <script src="scripts/review.js" defer></script>
 
-</p>
+</head>
 
-</main>
+<body>
 
-<footer>
+    <header>
 
-<p>
+        <h1>Review Submitted</h1>
+    </header>
 
-&copy;
-<span id="currentyear"></span>
+    <main>
 
-Jorge Lima
+        <h2>Thank you!</h2>
 
-</p>
+        <p>Your review has been submitted successfully.</p>
 
-<p id="lastModified"></p>
+        <p>Reviews Submitted: <span id="reviewCount"></span></p>
 
-</footer>
+    </main>
 
-<script src="scripts/review.js"></script>
+    <footer>
+
+        <p>
+
+        &copy;
+        <span id="currentyear"></span>
+
+        Jorge Lima
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/review.js"></script>
+
+</body>
+</html>
