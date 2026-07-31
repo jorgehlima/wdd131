@@ -30,8 +30,9 @@ form{
     font-size:.9rem;
 }
 
-label{
-    font-weight:bold;
+label label{
+    font-weight: normal;
+    margin: 0;
 }
 
 input,
@@ -44,6 +45,15 @@ textarea{
 fieldset{
     border:1px solid #ccc;
     padding:1rem;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating div{
+    text-align: center;
 }
 
 input[type="submit"]{
