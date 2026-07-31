@@ -95,14 +95,6 @@ fieldset{
 }
 
 input[type="submit"]{
-    background:#0066cc;
-    color: #ffffff ;
-    border:none;
-    cursor:pointer;
-    padding:1rem;
-}
-
-input[type="submit"]{
     width:100%;
     background:#0066cc;
     color: #ffffff;
