@@ -56,6 +56,26 @@ fieldset{
     text-align: center;
 }
 
+/*--Features--*/
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.feature-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
 input[type="submit"]{
     background:#0066cc;
     color:white;
