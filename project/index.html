@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Belém, Brazil - Explore its culture, history, attractions, and plan your visit.">
+    <meta name="description" content="Learn web development from scratch with free, beginner-friendly tutorials covering HTML, CSS, and JavaScript. Step-by-step lessons, hands-on projects, and clear explanations to help you build real websites—no prior experience required.">
     <meta name="author" content="Jorge Lima">
 
-    <title>Discover Belém | Home</title>
+    <title>Web Development for Beginners</title>
 
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
@@ -16,20 +16,176 @@
 
 <body>
 
-<header>
+    <header>
+        <div class="header-container">
 
-</header>
+            <img src="images/logo.png"
+                alt="Web Development for Beginners logo"
+                class="logo">
 
-<main>
+            <h1>Web Development for Beginners</h1>
 
+            <button id="menu-button" aria-label="Open Navigation">
+                ☰
+            </button>
 
-</main>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img src="images/hero.webp"
+                alt="Computer displaying web development code"
+                class="hero-image">
+
+            <div class="hero-text">
+
+                <h2>Start Your Web Development Journey</h2>
+
+                <p>
+                    Learn HTML, CSS, and JavaScript with beginner-friendly lessons,
+                    practical examples, and hands-on projects designed to help you
+                    build your first websites.
+                </p>
+
+                <a href="learn.html" class="button">
+                    Start Learning
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="introduction">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to <strong>Web Development for Beginners</strong>. This
+                website is designed for anyone who wants to learn how modern
+                websites are built. Whether you have never written a line of code
+                or you are looking to strengthen your skills, you'll find
+                easy-to-understand explanations, examples, and learning resources
+                that will guide you step by step.
+            </p>
+
+        </section>
+
+        <!-- What is Web Development -->
+        <section class="about-web-development">
+
+            <h2>What is Web Development?</h2>
+
+            <p>
+                Web development is the process of creating websites and web
+                applications that people use every day on the Internet. It combines
+                different technologies to build pages that are attractive,
+                interactive, and functional.
+            </p>
+
+            <p>
+                The three fundamental technologies used in web development are
+                <strong>HTML</strong>, <strong>CSS</strong>, and
+                <strong>JavaScript</strong>. Together, they define the structure,
+                appearance, and behavior of a website.
+            </p>
+
+        </section>
+
+        <!-- Technology Cards -->
+        <section class="technology-section">
+
+            <h2>Core Web Technologies</h2>
+
+            <div class="card-container">
+
+                <!-- HTML Card -->
+                <article class="card">
+
+                    <img src="images/html.webp"
+                        alt="HTML logo"
+                        loading="lazy">
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        HTML (HyperText Markup Language) provides the structure of a
+                        web page using elements such as headings, paragraphs,
+                        images, links, and lists.
+                    </p>
+
+                    <a href="learn.html#html" class="button">
+                        Learn HTML
+                    </a>
+
+                </article>
+
+                <!-- CSS Card -->
+                <article class="card">
+
+                    <img src="images/css.webp"
+                        alt="CSS logo"
+                        loading="lazy">
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        CSS (Cascading Style Sheets) controls the appearance of a
+                        website. It adds colors, fonts, spacing, layouts, and
+                        responsive designs for different screen sizes.
+                    </p>
+
+                    <a href="learn.html#css" class="button">
+                        Learn CSS
+                    </a>
+
+                </article>
+
+                <!-- JavaScript Card -->
+                <article class="card">
+
+                    <img src="images/javascript.webp"
+                        alt="JavaScript logo"
+                        loading="lazy">
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        JavaScript adds interactivity and dynamic features to web
+                        pages, allowing users to interact with forms, animations,
+                        menus, and other engaging website elements.
+                    </p>
+
+                    <a href="learn.html#javascript" class="button">
+                        Learn JavaScript
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
 
 <footer>
 
     <p>
-        &copy; <span id="currentyear"></span> Jorge Lima |
-        WDD 131 Final Project
+        &copy; <span id="currentyear"></span> Jorge Lima 🌐
+        🌐WDD 131 Final Project
     </p>
 
     <p id="lastModified"></p>
