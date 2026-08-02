@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+}
