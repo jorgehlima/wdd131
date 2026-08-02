@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the fundamentals of HTML, CSS, and JavaScript with beginner-friendly explanations and examples.">
+    <meta name="author" content="Jorge Lima">
+
+    <title>Learn | Web Development for Beginners</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <img src="images/logo.png"
+             alt="Web Development for Beginners logo"
+             class="logo">
+
+        <h1>Web Development for Beginners</h1>
+
+        <button id="menu-button" aria-label="Open Navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html" class="active">Learn</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="page-banner">
+
+        <h2>Learn Web Development</h2>
+
+        <p>
+            Web development is built on three core technologies:
+            HTML, CSS, and JavaScript. Learn what each one does and
+            how they work together to create modern websites.
+        </p>
+
+    </section>
+
+    <!-- HTML -->
+
+    <section id="html" class="technology">
+
+        <h2>HTML - HyperText Markup Language</h2>
+
+        <img src="images/html.webp"
+             alt="HTML logo"
+             loading="lazy">
+
+        <p>
+            HTML provides the structure of every web page. It uses
+            elements (tags) to organize content such as headings,
+            paragraphs, images, links, lists, and tables.
+        </p>
+
+        <h3>Example</h3>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;My first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <p>
+            Every website begins with HTML because it provides the
+            foundation upon which CSS and JavaScript are added.
+        </p>
+
+    </section>
+
+    <!-- CSS -->
+
+    <section id="css" class="technology">
+
+        <h2>CSS - Cascading Style Sheets</h2>
+
+        <img src="images/css.webp"
+             alt="CSS logo"
+             loading="lazy">
+
+        <p>
+            CSS controls the appearance of a website. It changes colors,
+            fonts, layouts, spacing, animations, and allows websites
+            to look great on phones, tablets, and desktops.
+        </p>
+
+        <h3>Example</h3>
+
+<pre><code>body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+h1{
+    color:#0A192F;
+}
+</code></pre>
+
+        <p>
+            Without CSS, every website would look like plain text.
+        </p>
+
+    </section>
+
+    <!-- JavaScript -->
+
+    <section id="javascript" class="technology">
+
+        <h2>JavaScript</h2>
+
+        <img src="images/javascript.webp"
+             alt="JavaScript logo"
+             loading="lazy">
+
+        <p>
+            JavaScript makes websites interactive by responding to user
+            actions. It can update page content, validate forms, create
+            animations, and communicate with web servers.
+        </p>
+
+        <h3>Example</h3>
+
+<pre><code>const heading =
+document.querySelector("h1");
+
+heading.textContent =
+"Welcome to Web Development!";
+</code></pre>
+
+        <p>
+            JavaScript brings websites to life by adding behavior and
+            dynamic features.
+        </p>
+
+    </section>
+
+    <!-- Working Together -->
+
+    <section class="technology">
+
+        <h2>How HTML, CSS, and JavaScript Work Together</h2>
+
+        <p>
+            Think of a website as a house.
+        </p>
+
+        <ul>
+            <li><strong>HTML</strong> builds the structure of the house.</li>
+            <li><strong>CSS</strong> paints and decorates the house.</li>
+            <li><strong>JavaScript</strong> adds electricity, lights, and automatic doors.</li>
+        </ul>
+
+        <p>
+            Together they create modern, responsive, and interactive
+            websites that users enjoy using.
+        </p>
+
+    </section>
+
+    <!-- Learning Tips -->
+
+    <section class="technology">
+
+        <h2>Learning Tips for Beginners</h2>
+
+        <ol>
+            <li>Practice coding every day.</li>
+            <li>Start with small projects.</li>
+            <li>Experiment by changing code.</li>
+            <li>Read error messages carefully.</li>
+            <li>Build projects instead of only watching tutorials.</li>
+            <li>Keep learning and don't give up.</li>
+        </ol>
+
+    </section>
+
+    <!-- Try It Yourself -->
+
+    <section class="technology">
+
+        <h2>Try It Yourself</h2>
+
+        <p>
+            The best way to learn web development is by practicing.
+            Create a simple web page that contains a heading,
+            paragraph, image, and a button. Then use CSS to change
+            its colors and layout, and JavaScript to make the button
+            display a message when clicked.
+        </p>
+
+        <a href="resources.html" class="button">
+            Explore Learning Resources
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span> Jorge Lima📚
+        WDD 131 Final Project📚
+    </p>
+
+    <p id="lastModified"></p>
+
+    <p>
+        <a href="references.html">References</a>
+    </p>
+
+</footer>
+
+</body>
+</html>
