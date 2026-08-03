@@ -59,22 +59,22 @@ nav a{
 
 /* -- Hero -- */
 
-.hero{
-
-    display:grid;
-
-    grid-template-columns:2fr 1fr;
-
-    gap:2rem;
-
-    align-items:center;
-
+.hero {
+    height: 80vh;
 }
 
-.hero-content{
+.hero-content {
+    max-width: 800px;
+}
 
-    text-align:left;
+.hero-content h2 {
 
+    font-size: 3.5rem;
+}
+
+.hero-content p {
+
+    font-size: 1.4rem;
 }
 
 /* -- About Section -- */
