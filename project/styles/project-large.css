@@ -25,14 +25,19 @@ header h1{
     margin:0;
 }
 
+.header-controls{
+    margin-bottom:0;
+}
+
 /* -- Navigation -- */
 
 #menu-button{
     display:none;
 }
 
-nav{
+#navigation{
     display:block;
+    width:auto;
 }
 
 nav ul{

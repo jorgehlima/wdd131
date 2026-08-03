@@ -84,7 +84,7 @@ function initThemeToggle() {
     });
 }
 
-/* -- 4. Resources page search (objects, arrays, array methods) -- */
+/* -- 4. Resources page search (objects, arrays, array methods)-- */
 
 function initResourceSearch() {
 
@@ -94,8 +94,6 @@ function initResourceSearch() {
 
     if (!searchBox || cardElements.length === 0) return;
 
-    // Build an array of plain objects describing each card so the
-    // filtering logic works with data, not the DOM, first.
     const resourceData = cardElements.map((card) => {
 
         const heading = card.querySelector("h3");
