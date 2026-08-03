@@ -365,6 +365,24 @@ section {
     margin: 0 auto 1rem;
 }
 
+.rounded-icon {
+
+    border-radius: 16px;
+}
+
+.book-cover {
+
+    width: 120px;
+
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin: 0 auto 1rem;
+}
+
 .resource-card.hidden {
     display: none;
 }
