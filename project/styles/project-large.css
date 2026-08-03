@@ -1,18 +1,195 @@
+/* --
+   project-large.css
+   Desktop Styles -- */
+
 @media only screen and (min-width: 768px) {
 
-.hero{
-    display:grid;
-    grid-template-columns:2fr 1fr;
+/* -- Header -- */
+
+.header-container{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     align-items:center;
-    gap:2rem;
+
 }
+
+.logo{
+    width:120px;
+    margin:0;
+}
+
+header h1{
+    font-size:2.4rem;
+    margin:0;
+}
+
+/* -- Navigation -- */
+
+#menu-button{
+    display:none;
+}
+
+nav{
+    display:block;
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:1.5rem;
+
+    align-items:center;
+
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+
+    padding:.5rem 1rem;
+
+    border-radius:5px;
+
+}
+
+/* -- Hero -- */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:2rem;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    text-align:left;
+
+}
+
+/* -- About Section -- */
 
 .about-grid{
+
     grid-template-columns:1fr 1fr;
+
 }
 
+/* -- Technology Cards -- */
+
 .cards{
+
     grid-template-columns:repeat(3,1fr);
+
+}
+
+.card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+/* -- Resource Cards -- */
+
+.card-container{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.resource-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+/* -- Contact Form -- */
+
+.contact-form{
+
+    max-width:850px;
+
+}
+
+.form-buttons{
+
+    justify-content:flex-start;
+
+}
+
+/* -- Code Blocks -- */
+
+pre{
+
+    font-size:1rem;
+
+}
+
+/* -- Tables -- */
+
+table{
+
+    font-size:1rem;
+
+}
+
+/* -- Footer -- */
+
+footer{
+
+    padding:2rem;
+
+}
+
+/* -- General Spacing -- */
+
+main{
+
+    padding:2rem;
+
+}
+
+section{
+
+    padding:2rem;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+
+}
+
+p,
+li{
+
+    font-size:1.05rem;
+
 }
 
 }
