@@ -358,6 +358,13 @@ section {
     margin: auto auto 1rem;
 }
 
+.technology > img {
+
+    width: 120px;
+
+    margin: 0 auto 1rem;
+}
+
 .resource-card.hidden {
     display: none;
 }
