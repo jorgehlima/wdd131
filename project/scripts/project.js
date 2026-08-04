@@ -63,7 +63,13 @@ function initThemeToggle() {
 
     if (!toggleButton) return;
 
-    const savedTheme = localStorage.getItem("wdd131-theme");
+    let savedTheme = null;
+
+    try {
+        savedTheme = localStorage.getItem("wdd131-theme");
+    } catch (error) {
+        savedTheme = null;
+    }
 
     if (savedTheme) {
         applyTheme(savedTheme);
@@ -78,13 +84,18 @@ function initThemeToggle() {
         const nextTheme = currentlyDark ? "light" : "dark";
 
         applyTheme(nextTheme);
-        localStorage.setItem("wdd131-theme", nextTheme);
+
+        try {
+            localStorage.setItem("wdd131-theme", nextTheme);
+        } catch (error) {
+    
+        }
 
         toggleButton.textContent = nextTheme === "dark" ? `☀️ Light Mode` : `🌙 Dark Mode`;
     });
 }
 
-/* -- 4. Resources page search (objects, arrays, array methods)-- */
+/* -- 4. Resources page search (objects, arrays, array methods) -- */
 
 function initResourceSearch() {
 
@@ -143,8 +154,12 @@ function initResourceSearch() {
 
 function getSavedMessages() {
 
-    const raw = localStorage.getItem("wdd131-contact-messages");
-    return raw ? JSON.parse(raw) : [];
+    try {
+        const raw = localStorage.getItem("wdd131-contact-messages");
+        return raw ? JSON.parse(raw) : [];
+    } catch (error) {
+        return [];
+    }
 }
 
 function renderMessageHistory() {
@@ -207,7 +222,12 @@ function initContactForm() {
 
         const savedMessages = getSavedMessages();
         savedMessages.push(newMessage);
-        localStorage.setItem("wdd131-contact-messages", JSON.stringify(savedMessages));
+
+        try {
+            localStorage.setItem("wdd131-contact-messages", JSON.stringify(savedMessages));
+        } catch (error) {
+            
+        }
 
         if (statusMessage) {
             statusMessage.classList.remove("form-error");
@@ -222,11 +242,22 @@ function initContactForm() {
 /* -- Run everything once the DOM is ready -- */
 
 function init() {
-    setFooterInfo();
-    initMobileNav();
-    initThemeToggle();
-    initResourceSearch();
-    initContactForm();
+
+    const setupSteps = [
+        setFooterInfo,
+        initMobileNav,
+        initThemeToggle,
+        initResourceSearch,
+        initContactForm
+    ];
+
+    setupSteps.forEach((step) => {
+        try {
+            step();
+        } catch (error) {
+            console.error(`Error running ${step.name}:`, error);
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", init);
