@@ -30,9 +30,13 @@ function initMobileNav() {
 
     if (!menuButton || !navigation) return;
 
+    menuButton.setAttribute("aria-expanded", "false");
+
     menuButton.addEventListener("click", () => {
 
         const isOpen = navigation.classList.toggle("open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
 
         if (isOpen) {
             menuButton.setAttribute("aria-label", "Close Navigation");
