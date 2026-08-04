@@ -370,6 +370,19 @@ section {
     border-radius: 16px;
 }
 
+.site-icon {
+
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: contain;
+
+    border-radius: 16px;
+
+    margin: 0 auto 1rem;
+}
+
 .book-cover {
 
     width: 120px;
